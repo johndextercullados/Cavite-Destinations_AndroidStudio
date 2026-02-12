@@ -15,8 +15,8 @@
         ></solid>
 
     <gradient
-        android:startColor="#C79F7E"
-        android:endColor="#DC841D"
+        android:startColor="#B71C1C"
+        android:endColor="#1A237E"
         android:angle="90"
         ></gradient>
 

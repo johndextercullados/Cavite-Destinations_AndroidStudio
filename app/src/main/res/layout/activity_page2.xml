@@ -9,29 +9,33 @@
 
     <Button
         android:id="@+id/btn_go_to_Firstpage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/mainpage"
         android:text="Menu"
         android:textColor="#FFFFFF"
+        app:backgroundTint="#C79F7E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintHorizontal_bias="0.26"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.994" />
+        app:layout_constraintVertical_bias="0.985" />
 
     <Button
         android:id="@+id/btn_go_to_3rdpage"
-        android:layout_width="141dp"
-        android:layout_height="49dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/mainpage"
         android:text="go to 3rd page"
         android:textColor="#FFFFFF"
+        app:backgroundTint="#C79F7E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintHorizontal_bias="0.756"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.995" />
+        app:layout_constraintVertical_bias="0.985" />
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -43,28 +47,72 @@
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.765">
+        app:layout_constraintVertical_bias="0.758">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TESTING TESTING"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
 
 
     </ScrollView>
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="390dp"
-        android:layout_height="180dp"
+        android:layout_height="200dp"
+        android:background="@drawable/scrollview1"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045"
-        android:background="@drawable/scrollview1"
-        >
+        app:layout_constraintVertical_bias="0.011">
 
-    </FrameLayout>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/alger"
+            android:gravity="center"
+            android:text="AGUINALDO SHRINE"
+            android:textColor="#ffff"
+            android:textSize="38dp"
+
+            />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/baskvill"
+            android:gravity="center"
+            android:text="Kawit Cavite"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/shrinelogo" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
