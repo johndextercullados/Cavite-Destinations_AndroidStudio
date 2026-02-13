@@ -126,6 +126,16 @@
             android:gravity="center"
             android:text="BSIT2A"
             android:textSize="20dp" />
+        <TextView
+            android:id="@+id/activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/alger"
+            android:gravity="center"
+            android:text="Activity#3"
+            android:textSize="19dp" />
 
 
     </LinearLayout>
