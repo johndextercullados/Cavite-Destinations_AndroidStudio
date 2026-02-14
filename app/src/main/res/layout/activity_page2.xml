@@ -46,27 +46,107 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.758">
+        app:layout_constraintTop_toBottomOf="@+id/TOPVIEW"
+        app:layout_constraintVertical_bias="0.08"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TESTING TESTING"
-                android:textColor="@color/black"
-                />
+            <!--THIS IS A NESTED LINEAR LAYOUT,
+            this is a horizontal layout inside a linear layout,,,
+            need to to display the image and text side by side
+             -->
+            <!-- 1st ROW -->
+            <LinearLayout
+                android:layout_width="365dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/scrollview1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TEXT TEXT EXAMPLE"
+                    android:textColor="#ffff"
+                    android:textSize="15sp" />
+                <!-- you can use \n to break lines -->
+
+                <ImageView
+                    android:layout_width="118dp"
+                    android:layout_height="114dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/aguinaldo3" />
+            </LinearLayout>
+
+
+            <!-- 2nd ROW -->
+            <LinearLayout
+                android:layout_width="365dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/scrollview1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="118dp"
+                    android:layout_height="114dp"
+                    android:src="@drawable/shrinelogo" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TEXT TEXT EXAMPLE"
+                    android:textColor="#ffff"
+                    android:textSize="18sp" />
+                <!-- you can use \n to break lines -->
+
+
+            </LinearLayout>
+
+            <!-- 3rd ROW -->
+            <LinearLayout
+                android:layout_width="365dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/scrollview1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TEXT TEXT EXAMPLE"
+                    android:textColor="#ffff"
+                    android:textSize="18sp" />
+                <!-- you can use \n to break lines -->
+
+                <ImageView
+                    android:layout_width="118dp"
+                    android:layout_height="114dp"
+                    android:src="@drawable/shrinelogo" />
+            </LinearLayout>
+
+
         </LinearLayout>
 
 
     </ScrollView>
 
     <LinearLayout
+        android:id="@+id/TOPVIEW"
         android:layout_width="390dp"
         android:layout_height="200dp"
         android:background="@drawable/scrollview1"
@@ -78,40 +158,63 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.011">
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15dp"
-            android:fontFamily="@font/alger"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/alger"
+                android:gravity="center"
+                android:text="AGUINALDO \n SHRINE"
+                android:textColor="#ffff"
+                android:textSize="38dp" />
+
+            <ImageView
+                android:layout_width="155dp"
+                android:layout_height="106dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/aguinaldo2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
             android:gravity="center"
-            android:text="AGUINALDO SHRINE"
-            android:textColor="#ffff"
-            android:textSize="38dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
 
-            />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/philflag" />
 
-        <TextView
-            android:id="@+id/location"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/baskvill"
-            android:gravity="center"
-            android:text="Kawit Cavite"
-            android:textColor="#ffff"
-            android:textSize="20dp"
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:fontFamily="@font/baskvill"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="The Birthplace of Filipino Freedom. This place is more than a mansion, the Aguinaldo Shrine stands as a monumental place to the courage of our of ancestors and the historic moment the Philippine flag first soared. "
+                android:textColor="#ffff"
+                android:textSize="13sp"
 
-            />
+                />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            app:srcCompat="@drawable/shrinelogo" />
+        </LinearLayout>
+
 
     </LinearLayout>
 
