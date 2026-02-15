@@ -27,18 +27,19 @@
         app:layout_constraintVertical_bias="0.942" />
 
     <LinearLayout
-        android:layout_width="380dp"
+        android:layout_width="365dp"
         android:layout_height="556dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/mainpage"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.342"
 
-        >
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342">
 
         <TextView
             android:id="@+id/title"
@@ -50,9 +51,8 @@
             android:gravity="center"
             android:text="CAVITE
             DESTINATIONS"
-            android:textSize="45dp"
-
-            />
+            android:textColor="#3E3636"
+            android:textSize="43dp" />
 
         <View
             android:layout_width="match_parent"
@@ -72,6 +72,7 @@
             android:fontFamily="@font/alger"
             android:gravity="center"
             android:text="AGUINALDO SHRINE"
+            android:textColor="#3E3636"
             android:textSize="28dp" />
 
         <TextView
@@ -83,6 +84,7 @@
             android:fontFamily="@font/harngton"
             android:gravity="center"
             android:text="PEOPLE'S PARK IN THE SKY"
+            android:textColor="#3E3636"
             android:textSize="28dp" />
 
         <TextView
@@ -94,6 +96,7 @@
             android:fontFamily="@font/ravie"
             android:gravity="center"
             android:text="Picnic Grove"
+            android:textColor="#3E3636"
             android:textSize="28dp" />
 
         <View
@@ -114,6 +117,7 @@
             android:fontFamily="@font/alger"
             android:gravity="center"
             android:text="John Dexter V. Cullados"
+            android:textColor="#3E3636"
             android:textSize="20dp" />
 
         <TextView
@@ -125,7 +129,9 @@
             android:fontFamily="@font/alger"
             android:gravity="center"
             android:text="BSIT2A"
+            android:textColor="#3E3636"
             android:textSize="20dp" />
+
         <TextView
             android:id="@+id/activity"
             android:layout_width="wrap_content"
@@ -135,6 +141,7 @@
             android:fontFamily="@font/alger"
             android:gravity="center"
             android:text="Activity#3"
+            android:textColor="#3E3636"
             android:textSize="19dp" />
 
 

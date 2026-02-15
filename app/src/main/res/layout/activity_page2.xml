@@ -5,7 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".page2">
+    tools:context=".page2"
+    android:background="#5F3333"
+    >
 
     <Button
         android:id="@+id/btn_go_to_Firstpage"
@@ -39,16 +41,17 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="390dp"
+        android:layout_width="365dp"
         android:layout_height="450dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/scrollview1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TOPVIEW"
-        app:layout_constraintVertical_bias="0.08"
-        >
+        app:layout_constraintVertical_bias="0.08">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -61,7 +64,7 @@
              -->
             <!-- 1st ROW -->
             <LinearLayout
-                android:layout_width="365dp"
+                android:layout_width="355dp"
                 android:layout_height="130dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="15dp"
@@ -73,9 +76,13 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TEXT TEXT EXAMPLE"
+                    android:text="Built in 1845, this mansion was the home of Emilio Aguinaldo, the first Philippine President. It gained historic fame on June 12, 1898, as the site where Philippine Independence was declared and the national flag was first unfurled. It was officially declared a National Shrine in 1964."
                     android:textColor="#ffff"
-                    android:textSize="15sp" />
+                    android:textSize="9.5sp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:layout_marginLeft="15dp"
+                    />
                 <!-- you can use \n to break lines -->
 
                 <ImageView
@@ -88,7 +95,7 @@
 
             <!-- 2nd ROW -->
             <LinearLayout
-                android:layout_width="365dp"
+                android:layout_width="355dp"
                 android:layout_height="130dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
@@ -100,23 +107,25 @@
                 <ImageView
                     android:layout_width="118dp"
                     android:layout_height="114dp"
-                    android:src="@drawable/shrinelogo" />
+                    android:src="@drawable/aguinaldo4" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TEXT TEXT EXAMPLE"
+                    android:text="What to experience: \n - Explore the 'Independence Balcony' \n - Discover Secret Passages \n - The Ground Floor Museum \n - Stroll the Gardens \n - Admire the Architecture "
                     android:textColor="#ffff"
-                    android:textSize="18sp" />
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:layout_marginLeft="15dp"
+                    />
                 <!-- you can use \n to break lines -->
-
-
             </LinearLayout>
 
             <!-- 3rd ROW -->
             <LinearLayout
-                android:layout_width="365dp"
+                android:layout_width="355dp"
                 android:layout_height="130dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
@@ -128,15 +137,85 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TEXT TEXT EXAMPLE"
+                    android:text="Why go? \nIt is a 'field trip' destination because it is the ultimate symbol of Philippine Independence. People visit to stand on the same ground where the first national anthem was played and the first flag soared, making it the most important historical landmark in Cavite."
                     android:textColor="#ffff"
-                    android:textSize="18sp" />
+                    android:textSize="11sp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:layout_marginLeft="15dp"
+                    />
                 <!-- you can use \n to break lines -->
 
                 <ImageView
                     android:layout_width="118dp"
                     android:layout_height="114dp"
-                    android:src="@drawable/shrinelogo" />
+                    android:src="@drawable/aguinaldo5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    />
+            </LinearLayout>
+
+            <!-- 4th ROW -->
+            <LinearLayout
+                android:layout_width="355dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/scrollview1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/funfact" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="The Aguinaldo Shrine is full of secret passages and hidden compartments. \nMany of the wooden pillars and walls are actually hollow, used for hiding important documents or even as a way for guards to move between floors without being seen."
+                    android:textColor="#ffff"
+                    android:textSize="11sp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:layout_marginLeft="15dp"
+                    />
+                <!-- you can use \n to break de lines -->
+            </LinearLayout>
+
+            <!-- 5th ROW -->
+            <LinearLayout
+                android:layout_width="355dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/scrollview1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Location: \nTirona Highway, Kaingen, Kawit, Cavite. \nIt is easily accessible via the CAVITEX and has many commuting options like baby bus, tricycles, and jeeps."
+                    android:textColor="#ffff"
+                    android:textSize="11.5sp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    />
+                <!-- you can use \n to break lines -->
+
+                <ImageView
+                    android:layout_width="118dp"
+                    android:layout_height="114dp"
+                    android:src="@drawable/aguinaldo6"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    />
             </LinearLayout>
 
 
@@ -147,8 +226,11 @@
 
     <LinearLayout
         android:id="@+id/TOPVIEW"
-        android:layout_width="390dp"
+        android:layout_width="365dp"
         android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/scrollview1"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -212,7 +294,6 @@
                 android:textSize="13sp"
 
                 />
-
         </LinearLayout>
 
 
