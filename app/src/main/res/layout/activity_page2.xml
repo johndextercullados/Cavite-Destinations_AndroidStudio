@@ -29,9 +29,11 @@
         android:layout_width="140dp"
         android:layout_height="50dp"
         android:background="@drawable/mainpage"
-        android:text="go to 3rd page"
-        android:textColor="#FFFFFF"
+        android:text="Go to People's Park"
+        android:textColor="#000000"
         app:backgroundTint="#C79F7E"
+        android:fontFamily="@font/harngton"
+        android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.756"
@@ -67,7 +69,7 @@
                 android:layout_width="355dp"
                 android:layout_height="130dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/scrollview1"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
@@ -78,10 +80,11 @@
                     android:layout_weight="1"
                     android:text="Built in 1845, this mansion was the home of Emilio Aguinaldo, the first Philippine President. It gained historic fame on June 12, 1898, as the site where Philippine Independence was declared and the national flag was first unfurled. It was officially declared a National Shrine in 1964."
                     android:textColor="#ffff"
-                    android:textSize="9.5sp"
+                    android:textSize="12sp"
                     android:layout_gravity="center_vertical"
                     android:gravity="left"
                     android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/baskvill"
                     />
                 <!-- you can use \n to break lines -->
 
@@ -115,10 +118,11 @@
                     android:layout_weight="1"
                     android:text="What to experience: \n - Explore the 'Independence Balcony' \n - Discover Secret Passages \n - The Ground Floor Museum \n - Stroll the Gardens \n - Admire the Architecture "
                     android:textColor="#ffff"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:layout_gravity="center_vertical"
                     android:gravity="left"
                     android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/baskvill"
                     />
                 <!-- you can use \n to break lines -->
             </LinearLayout>
@@ -139,10 +143,11 @@
                     android:layout_weight="1"
                     android:text="Why go? \nIt is a 'field trip' destination because it is the ultimate symbol of Philippine Independence. People visit to stand on the same ground where the first national anthem was played and the first flag soared, making it the most important historical landmark in Cavite."
                     android:textColor="#ffff"
-                    android:textSize="11sp"
+                    android:textSize="12.5sp"
                     android:layout_gravity="center_vertical"
                     android:gravity="left"
                     android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/baskvill"
                     />
                 <!-- you can use \n to break lines -->
 
@@ -174,14 +179,14 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
                     android:layout_weight="1"
+                    android:gravity="left"
                     android:text="The Aguinaldo Shrine is full of secret passages and hidden compartments. \nMany of the wooden pillars and walls are actually hollow, used for hiding important documents or even as a way for guards to move between floors without being seen."
                     android:textColor="#ffff"
-                    android:textSize="11sp"
-                    android:layout_gravity="center_vertical"
-                    android:gravity="left"
-                    android:layout_marginLeft="15dp"
-                    />
+                    android:fontFamily="@font/baskvill"
+                    android:textSize="13sp" />
                 <!-- you can use \n to break de lines -->
             </LinearLayout>
 
@@ -201,11 +206,12 @@
                     android:layout_weight="1"
                     android:text="Location: \nTirona Highway, Kaingen, Kawit, Cavite. \nIt is easily accessible via the CAVITEX and has many commuting options like baby bus, tricycles, and jeeps."
                     android:textColor="#ffff"
-                    android:textSize="11.5sp"
+                    android:textSize="13sp"
                     android:layout_gravity="center_vertical"
                     android:gravity="left"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="10dp"
+                    android:fontFamily="@font/baskvill"
                     />
                 <!-- you can use \n to break lines -->
 
@@ -278,7 +284,7 @@
                 android:layout_height="72dp"
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:src="@drawable/philflag" />
+                android:src="@drawable/shrinelogo" />
 
             <TextView
                 android:id="@+id/description"

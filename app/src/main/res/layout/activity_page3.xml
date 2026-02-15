@@ -5,8 +5,271 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".page3">
+    tools:context=".page3"
+    android:background="#5F3333"
+    >
 
+
+    <LinearLayout
+        android:id="@+id/TOPVIEW"
+        android:layout_width="365dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/scrollview2"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/harngton"
+                android:gravity="center"
+                android:text="PEOPLE'S PARK\nIN\nTHE SKY"
+                android:textColor="#000000"
+                android:textSize="27dp"
+                android:layout_marginRight="3dp"
+                />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/people1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tower2" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:fontFamily="@font/baskvill"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Sitting on top of Mt. Sungay, People’s Park in the Sky offers a breathtaking 360-degree view of Tagaytay and the surrounding provinces. It is a peaceful escape among the clouds where you can literally feel the sky."
+                android:textColor="#000000"
+                android:textSize="12.5sp"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="365dp"
+        android:layout_height="450dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/scrollview2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TOPVIEW"
+        app:layout_constraintVertical_bias="0.08">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--THIS IS A NESTED LINEAR LAYOUT,
+            this is a horizontal layout inside a linear layout,,,
+            need to to display the image and text side by side
+             -->
+            <!-- 1st ROW -->
+            <LinearLayout
+                android:layout_width="355dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/scrollview2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Originally called 'Palace in the Sky,' it was built in 1981 as a guest house for US President Ronald Reagan. Construction stopped in 1983 after the visit was canceled, leaving the mansion unfinished. After the 1986 People Power Revolution, it was renamed and opened to the public."
+                    android:textColor="#000000"
+                    android:fontFamily="@font/baskvill"
+                    android:textSize="13sp" />
+                <!-- you can use \n to break lines -->
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/people2" />
+            </LinearLayout>
+
+
+            <!-- 2nd ROW -->
+            <LinearLayout
+                android:layout_width="355dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/scrollview2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="114dp"
+                    android:src="@drawable/people3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="What to Experience: \n - 360-Degree Viewing Deck \n - Shrine of Our Lady, Mother of Fair Love \n - Hot Bulalo \n - Foggy Uphill and Downhill Walk \n - PAGASA Doppler Radar"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/baskvill"
+                    android:textSize="13sp" />
+                <!-- you can use \n to break lines -->
+            </LinearLayout>
+
+            <!-- 3rd ROW -->
+            <LinearLayout
+                android:layout_width="355dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/scrollview2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Why go? \nIt is a 'bucket list' destination because it is the highest point in Cavite. People mainly visit because of the stunning view at the top, not to mention the food. Its cool climate and cheap entrance fee makes it a perfect get away spot for families and friends."
+                    android:textColor="#000000"
+                    android:fontFamily="@font/baskvill"
+                    android:textSize="13sp" />
+                <!-- you can use \n to break lines -->
+
+                <ImageView
+                    android:layout_width="118dp"
+                    android:layout_height="114dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/people5" />
+            </LinearLayout>
+
+            <!-- 4th ROW -->
+            <LinearLayout
+                android:layout_width="355dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/scrollview2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/funfact" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text= "To build the 'Palace,' the peak of Mt. Sungay had to be leveled. The mountain used to be much taller, but engineers chopped off its sharp top with bulldozers to create a flat base for the mansion. It's literally a flattened mountain."
+                    android:textColor="#000000"
+                    android:fontFamily="@font/baskvill"
+                    android:textSize="14.5sp" />
+                <!-- you can use \n to break de lines -->
+            </LinearLayout>
+
+            <!-- 5th ROW -->
+            <LinearLayout
+                android:layout_width="355dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/scrollview2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Location: \nTagaytay - Calamba Rd, Mt. Sungay, Brgy. Dapdap East, Tagaytay City, Cavite. \nYou mainly need a private vehicle to reach it but there are tricycles at the base and a jeep to reach the top."
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/baskvill"
+                    />
+                <!-- you can use \n to break lines -->
+
+                <ImageView
+                    android:layout_width="118dp"
+                    android:layout_height="114dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/people4" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
     <Button
         android:id="@+id/btn_go_to_Firstpage"
@@ -28,62 +291,16 @@
         android:layout_width="140dp"
         android:layout_height="50dp"
         android:background="@drawable/mainpage"
-        android:text="go to 4th page"
-        android:textColor="#FFFFFF"
+        android:text="Go to Picnic Grove"
+        android:textColor="#000000"
+        android:fontFamily="@font/ravie"
         app:backgroundTint="#C79F7E"
+        android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.756"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.982" />
-
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="390dp"
-        android:layout_height="450dp"
-        android:background="@drawable/scrollview2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.758">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
-
-    <LinearLayout
-        android:layout_width="390dp"
-        android:layout_height="200dp"
-        android:background="@drawable/scrollview2"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.011"
-        >
-
-
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15dp"
-            android:fontFamily="@font/harngton"
-            android:gravity="center"
-            android:text="PEOPLE'S PARK IN THE SKY"
-            android:textColor="#ffff"
-            android:textSize="38dp"
-
-            />
-
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
